@@ -22,6 +22,9 @@ class serveur
     /**
      * One Serveur have Many Services.
      * @ManyToMany(targetEntity="Ingenieur")
+     *  joinColumns={@JoinColumn(name="serveur_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@JoinColumn(name="group_id", referencedColumnName="id")}
+     *      )
      */
     private $ingenieurs;
     

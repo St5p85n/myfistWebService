@@ -14,9 +14,9 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src/entit
 
 // database configuration parameters
 $conn = array(
-    'dbname' => 'webServiceRestParcInformatique_l3gl',
+    'dbname' => 'bdservices',
     'user'     => 'root',
-    'password' => '',
+    'password' => 'stephen@strong10',
     'host' => '127.0.0.1',
     'driver' => 'pdo_mysql',
 );

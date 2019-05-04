@@ -19,6 +19,9 @@ class Ingenieur
     /**
      * Many Ingenieur have Many Serveur.
      * @ManyToMany(targetEntity="Serveur")
+     *      joinColumns={@JoinColumn(name="ingenieur_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@JoinColumn(name="group_id", referencedColumnName="id")}
+     *      )
      */
     private $serveurs;
     /**
